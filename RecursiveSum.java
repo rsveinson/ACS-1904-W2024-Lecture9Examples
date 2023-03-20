@@ -15,8 +15,8 @@ public class RecursiveSum
 
         int sum = 0;
         
-        //sum = linearSum(list, list.length);
-        sum = binarySum(list, 0, list.length - 1);
+        sum = linearSum(list, list.length);
+        //sum = binarySum(list, 0, list.length - 1);
         System.out.println(sum);
 
 
