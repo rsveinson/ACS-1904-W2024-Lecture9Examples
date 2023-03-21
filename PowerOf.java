@@ -1,39 +1,39 @@
 import java.util.Scanner;
-// import java.io.File;
-// import java.io.FileNotFoundException;
+
 /** 
  * ACS-1904 Assignment 1
  * @Sveinson 
 */
 
-public class FactorialStaticMethod{
+public class PowerOf{
     public static void main(String[] args){
         
-        int n = 0;          // number to calculate factorial
-        int fact = 0;  // factorial of n
-        
         Scanner scanner = new Scanner(System.in);
+        int exponent;
+        int pot = 0;
 
-        System.out.println("enter a number to get its factorial.");
-        n = scanner.nextInt();
+        System.out.println("enter the power of two");
+        exponent = scanner.nextInt();
         
-        fact = factorial(n);
-        System.out.println(n + "! = " + fact);
+        pot = powerOfTwo(exponent);
+        System.out.println("2 to the power of " + exponent + " = " + pot);
+        
 
 
         System.out.println("end of program");
     }
     
-    public static int factorial(int n){
-        if(n == 0){
-            // the base case
+    public static int powerOfTwo(int ex){
+        if(ex == 0){
             return 1;
         }// end base case
         else{
-            // the recursive case
-            return n * factorial(n - 1);
-        }
-    }
+            return 2 * powerOfTwo(ex -1);
+        }// end recursive call
+
+
+        
+    }// end power of two
 }
 
     /*****************************************
