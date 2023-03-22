@@ -45,5 +45,20 @@ public class Create5Employees
         //or
         System.out.print(peter.getSupervisor().getFirstName());
         System.out.print(" " +peter.getSupervisor().getLastName());
+        
+        // work through the list recursively
+        System.out.println("\nSupervisor List");
+        printSupervisors(john);
+    }
+    
+    public static void printSupervisors(Employee e){
+        if(e.getSupervisor() == null){
+            System.out.println(e.getFirstName() + " Is The Boss");
+        }
+        else{
+            System.out.print(e.getFirstName() + " is supervised by ");
+            System.out.println(e.getSupervisor().getFirstName());
+            printSupervisors(e.getSupervisor());
+        }
     }
 }
