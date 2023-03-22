@@ -50,7 +50,14 @@ public class Create5Employees
         System.out.println("\nSupervisor List");
         printSupervisors(john);
     }
-    
+    /* recursive thought process for print the list of supervisors
+     * smaller versions: print the first employee's supervisor and the list of
+     *                      all the other supervisors
+     * what's the base case: when the supervisor field is null
+     * what's the general/recursive case: print the list of supervisors 
+     *                      of employee's suprevisor
+     * 
+     */
     public static void printSupervisors(Employee e){
         if(e.getSupervisor() == null){
             System.out.println(e.getFirstName() + " Is The Boss");
