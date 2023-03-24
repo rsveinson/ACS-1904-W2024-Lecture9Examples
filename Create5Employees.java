@@ -43,12 +43,26 @@ public class Create5Employees
         System.out.println(aSuper.getFirstName()+" "+aSuper.getLastName());
         
         //or
+        // note the double dot operator
         System.out.print(peter.getSupervisor().getFirstName());
         System.out.print(" " +peter.getSupervisor().getLastName());
         
+        System.out.print(peter.getSupervisor().getSupervisor().getFirstName());
+        System.out.print(" " +peter.getSupervisor().getSupervisor().getLastName());
         // work through the list recursively
-        System.out.println("\nSupervisor List");
+        System.out.println("\n\nSupervisor List");
         printSupervisors(john);
+        
+        System.out.println("\n\nSupervisors 2");
+        System.out.println(supervisors(john));
+    }
+    
+    public static String supervisors(Employee e){
+        // if(e.getSupervisor() == null){
+            // return " ha " + e.toString();
+        // }
+        
+        return e.toString() + "\n";
     }
     /* recursive thought process for print the list of supervisors
      * smaller versions: print the first employee's supervisor and the list of

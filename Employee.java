@@ -44,4 +44,9 @@ public class Employee
     public void setSupervisor(Employee s){
         supervisor = s;
     }
+    
+    @Override
+    public String toString(){
+        return "Employee: " + firstName + " supervised by " + this.supervisor + "\n";
+    }
 }

@@ -13,12 +13,14 @@ public class FibonacciDriver{
         /* find the nth fibonacci number using
          * a recursive method
          */
-        for(int i = 0; i < n; i++){
-            fibN = fib.fibonacci(i);
-            System.out.println("The " + (i + 1) + "th Fibonacci number is: " + fibN);
-        }
+        // for(int i = 0; i < n; i++){
+            // fibN = fib.fibonacci(i);
+            // System.out.println("The " + (i + 1) + "th Fibonacci number is: " + fibN);
+        // }
         
-        
+        // let's see how this works for a single
+        // fibonacci computation
+        System.out.println(fib.fibonacci(4));
 
         System.out.println("end of program");
     }

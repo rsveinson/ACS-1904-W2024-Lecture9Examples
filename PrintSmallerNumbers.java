@@ -10,9 +10,9 @@ public class PrintSmallerNumbers{
     public static void main(String[] args)throws FileNotFoundException {
         
         Scanner scanner = new Scanner(System.in);
-
-        
-        printDimishingNumber(1234567);
+        int n = 1234567;
+        System.out.println("Print " + n + " diminishing.");
+        printDimishingNumber(n);
 
 
         System.out.println("end of program");
