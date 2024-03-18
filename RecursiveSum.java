@@ -15,8 +15,8 @@ public class RecursiveSum
 
         int sum = 0;
         
-        //sum = linearSum(list, list.length);
-        sum = binarySum(list, 0, list.length - 1);
+        sum = linearSum(list, list.length);
+        //sum = binarySum(list, 0, list.length - 1);
         System.out.println(sum);
 
 
@@ -27,8 +27,8 @@ public class RecursiveSum
         if(n == 0)
             return 0;
         else
-            //return l[n-1] + linearSum(l, n-1);
-            return linearSum(l, n-1) + l[n-1];
+            return l[n-1] + linearSum(l, n-1);
+            //return linearSum(l, n-1) + l[n-1];
     }
     
     public static int binarySum(int[] l, int low, int high){

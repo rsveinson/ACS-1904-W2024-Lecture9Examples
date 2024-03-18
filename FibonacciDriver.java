@@ -20,7 +20,7 @@ public class FibonacciDriver{
         
         // let's see how this works for a single
         // fibonacci computation
-        System.out.println(fib.fibonacci(4));
+        System.out.println(fib.fibonacci(3));
 
         System.out.println("end of program");
     }
