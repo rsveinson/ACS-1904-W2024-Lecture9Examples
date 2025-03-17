@@ -6,3 +6,4 @@ public class Factorial {
         return n*factorial(n-1);// smaller problem
     }
 }
+
