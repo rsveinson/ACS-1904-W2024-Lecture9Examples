@@ -55,6 +55,8 @@ public class Create5Employees
         
         System.out.println("\n\nSupervisors 2");
         System.out.println(supervisors(john));
+        
+        System.out.println(john);
     }
     
     public static String supervisors(Employee e){
