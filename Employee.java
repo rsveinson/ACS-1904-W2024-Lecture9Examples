@@ -47,6 +47,7 @@ public class Employee
     
     @Override
     public String toString(){
-        return "Employee: " + firstName + " supervised by " + this.supervisor + "\n";
+        return "Employee: " + firstName + " supervised by " 
+        + this.supervisor + "\n";
     }
 }

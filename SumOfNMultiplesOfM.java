@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
  *              multiples of m
 */
 
-public class SomeOfNMultiplesOfM{
+public class SumOfNMultiplesOfM{
     public static void main(String[] args)throws FileNotFoundException {
         
         Scanner scanner = new Scanner(System.in);

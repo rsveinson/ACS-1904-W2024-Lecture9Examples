@@ -54,15 +54,45 @@ public class Create5Employees
         printSupervisors(john);
         
         System.out.println("\n\nSupervisors 2");
-        System.out.println(supervisors(john));
         
+        /* how does the following code produce the
+         * output it does? Remember it prints 
+         * Employee: John supervised by Employee: Peter supervised by 
+         * Employee: Susan supervised by Employee: 
+         * Tom supervised by Employee: April supervised by null
+         * 
+         * all on one line.
+         * 
+         * Printing the "Employee: John supervised by Employee:"
+         * is not hard to figure out. Looking at the toString()
+         * method in Employee we see where this comes from.
+         * 
+         * but why does it stop with April saying
+         * "supervised by null"?
+         * 
+         * The last bit of toString() is "+ this.supervisor"
+         * when we get to April her supervisor field is set to
+         * null so there is no toString() to call on as there
+         * is no Employee object being referenced.
+         * 
+         * Even when we take the supervisor = null; out of the
+         * constructor it works, apparently the Employee
+         * variable is null by default
+         * 
+         * Also, why does the " ha " in the supervisors method
+         * never print? Well, same as above. Once we get 
+         * to April there is no Employee object being
+         * referenced to e.stoString() results in null
+ 
+         */ 
+        System.out.println(supervisors(john));        
         System.out.println(john);
     }
     
     public static String supervisors(Employee e){
-        // if(e.getSupervisor() == null){
-            // return " ha " + e.toString();
-        // }
+        if(e.getSupervisor() == null){
+            return " ha " + e.toString();
+        }
         
         return e.toString() + "\n";
     }
