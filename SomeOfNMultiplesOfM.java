@@ -13,8 +13,10 @@ public class SomeOfNMultiplesOfM{
         
         Scanner scanner = new Scanner(System.in);
 
+        int n = 5;      // how many mulitple
+        int m = 3;      // multiples of...
         
-        System.out.println(sumOfNOfM(5, 3));
+        System.out.println(sumOfNOfM(n, m));
 
 
         System.out.println("end of program");
